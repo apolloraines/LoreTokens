@@ -20,6 +20,6 @@ Additional rules (see `docs/LICENSE.txt` for the full text):
 
 - Corporate restriction clause prevents large parents from spinning subsidiaries purely to bypass the thresholds.
 - “Big Bird” addendum blocks monopolistic behavior and derivative-patent grabs from >$1B revenue entities.
-- Ethical-use and attribution clauses apply (“Powered by LoreTokens – Cognitive Compression for AI”).
+- Ethical-use and attribution clauses apply (“Powered by LoreTokens”).
 
 **Contact**: apollo@saiql.ai (Robert Rice / Apollo Raines) for compliance, partnerships, or licensing requests.
