@@ -16,7 +16,7 @@ EXPAND.MED.NEURO:SCI:S13_C4_SUB10:[brain+nervous+diagnosis>>med_specialty,ACTIVE
 
 ## Why LoreTokens?
 
-- **Semantic compression** – symbolic glyphs (⟆, §, ↗, …) capture both the schema _and_ typical values, yielding 3–50× smaller payloads than JSON while staying lossless.
+- **Semantic compression** – compact LoreToken symbols encode schemas, behaviors, and typical values so models do not need the full JSON every time. In internal tests on prompts and configs, we see 3–10x smaller payloads than equivalent JSON, and in extreme, domain tuned cases, much higher semantic compression while keeping the same model behavior.
 - **LLM-native** – the formats are optimized for Claude, Grok, GPT, etc.; models learn the glyph vocabulary and can reason directly on-compression (no decoding step).
 - **Safety rails** – declared lengths, typed prefixes, and status codes make it easy to sanity-check arrays in streaming contexts.
 - **Field-proven** – used inside SAIQL, NovaMem, Loretoken-GPU, and Codex workflows to hit “616× faster than Postgres” retrieval speeds.
