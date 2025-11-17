@@ -4,6 +4,10 @@
 
 Token-oriented serialization formats that compress structured data—logs, telemetry, reasoning traces, even trading feeds. LoreTokens encode the same information as JSON but collapse verbose structures into short, LLM-native strings—perfect for passing large datasets through expensive model context windows, easier for models to reason over than raw natural language, and able to cut GPU/runtime power consumption by up to 70% (less context to stream, same answer quality).
 
+Note: LoreTokens and SAIQL were originally built as internal infrastructure for an enterprise crypto trading AI named Nova. We thought we were building plumbing; turns out we’d built a whole new engine. Somewhere along the way we realized we hadn’t just built trading tools – we’d accidentally built a general-purpose semantic compression + query layer that nobody else had.
+
+Because of that history, the docs and examples still lean heavily on crypto trading, but the tech itself is fully industry-neutral and happy to work on anything from finance to healthcare to robotics and beyond.
+
 > “You just decompressed 35 bytes into 150+ bytes of meaning.” – _LORETOKEN_PROOF_FOR_CLAUDE.md_
 
 ## Why LoreTokens?
