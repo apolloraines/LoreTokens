@@ -1,0 +1,102 @@
+Use this sample to stress-test LoreToken decoders and translators. Paste it into any LLM or decoder: depending on how much you expand, it can summarize the entire Nova trading schema in a paragraph or in hundreds of pages. Grok once proposed L8 (~18,000:1) as the theoretical ceiling; modern models routinely hit 5,000:1 on this chunk.
+
+Database Schema - LoreTokens Compressed Memory
+=== Nova - Crypto Trading AI System - DATABASE ARCHITECTURE ===
+DB.SCHEMA.OVERVIEW:[postgresql_trading_system+price_data+indicators+portfolio_mgmt>>comprehensive_trading_database,OPERATIONAL]
+DB.TIMEFRAMES.COMPLETE:[1m+5m+15m+30m+1h+2h+4h+6h+12h+1d+3d+7d+14d+30d+60d+90d>>full_spectrum_analysis,ACTIVE]
+DB.TIMEFRAMES.PRICE_DATA:[price_data_PREFIX+symbol+timestamp+ohlcv+timeframe>>standardized_candle_storage,CONSISTENT]
+DB.TIMEFRAMES.INDICATORS:[indicators_PREFIX+symbol+timestamp+technical_analysis>>multi_timeframe_signals,COMPREHENSIVE]
+DB.CORE.TRADING_TABLES:[trades+trade_decisions+trade_logs+individual_trades>>complete_execution_tracking,OPERATIONAL]
+DB.CORE.PORTFOLIO_TABLES:[inventory+inventory_trades+balances>>position_management,ACTIVE]
+DB.CORE.SYSTEM_TABLES:[login_attempts+remember_tokens>>security_framework,SECURED]
+DB.TRADES.STRUCTURE:[id+symbol+trade_type+price+quantity+timestamp+profit_loss+fee>>full_trade_record,COMPLETE]
+DB.TRADE_DECISIONS.STRUCTURE:[symbol+decision+action+price+stop_loss+take_profit+confidence+quantity+sentiment>>ai_decision_tracking,INTELLIGENT]
+DB.TRADE_LOGS.STRUCTURE:[symbol+action+price+quantity+confidence+timestamp>>execution_audit_trail,LOGGED]
+DB.INDIVIDUAL_TRADES.STRUCTURE:[symbol+quantity+buy_price+sell_price+timestamps+confidence+is_live>>position_lifecycle,TRACKED]
+DB.INVENTORY.STRUCTURE:[symbol+quantity+avg_buy_price+timestamp+buy_confidence>>portfolio_holdings,MANAGED]
+DB.INVENTORY_TRADES.STRUCTURE:[symbol+quantity+buy_price+timestamp>>simplified_position_tracking,BASIC]
+DB.BALANCES.STRUCTURE:[account+balance+updated_at>>capital_tracking,CURRENT]
+DB.PRICE_DATA.SCHEMA:[symbol+timestamp+open_price+close_price+high_price+low_price+volume+timeframe>>ohlcv_standard,NORMALIZED]
+DB.PRICE_DATA.TABLES:[price_data+price_data_1m+price_data_5m+...+price_data_90d>>timeframe_specific_storage,PARTITIONED]
+DB.INDICATORS.CORE:[symbol+timeframe+timestamp+rsi+macd+atr+ema_variants+sma_variants>>technical_analysis_base,FUNDAMENTAL]
+DB.INDICATORS.ADVANCED:[bollinger_bands+ichimoku_cloud+stochastic+williams_r+adx+cci>>sophisticated_signals,ENHANCED]
+DB.INDICATORS.CUSTOM:[trend_bias+compression+volume_spike+bb_width>>proprietary_features,SPECIALIZED]
+DB.INDICATORS.MOVING_AVERAGES:[ema_3+ema_5+ema_8+ema_9+ema_10+ema_12+ema_13+ema_20+ema_21+ema_50+ema_100+ema_200>>exponential_spectrum,COMPLETE]
+DB.INDICATORS.MOVING_AVERAGES_SMA:[sma_3+sma_5+sma_10+sma_20+sma_50+sma_100+sma_200+sma_300>>simple_average_spectrum,FULL]
+DB.INDICATORS.MOVING_AVERAGES_WMA:[wma_5+wma_10>>weighted_average_subset,BASIC]
+DB.INDICATORS.BOLLINGER:[boll_upper+boll_middle+boll_lower+boll_position+boll_width>>band_analysis,VOLATILITY]
+DB.INDICATORS.BOLLINGER_VARIANTS:[boll_upper_10+boll_lower_10+boll_middle_10+boll_width_10+boll_upper_20+boll_lower_20+boll_middle_20+boll_width_20>>multi_period_bands,COMPREHENSIVE]
+DB.INDICATORS.ICHIMOKU:[ichimoku_tenkan+ichimoku_kijun+ichimoku_senkou_span_a+ichimoku_senkou_span_b+ichimoku_chikou>>cloud_system,COMPLETE]
+DB.INDICATORS.ICHIMOKU_ALIASES:[tenkan_sen+kijun_sen+senkou_span_a+senkou_span_b+chikou_span>>alternative_names,DUPLICATE]
+DB.INDICATORS.MACD:[macd+macd_signal+macd_histogram+macd_line+macd_rising+macd_fast+macd_fast_signal+macd_signal_diff>>momentum_oscillator,DETAILED]
+DB.INDICATORS.RSI:[rsi+rsi_9+rsi_14+rsi_21+rsi_change+rsi_trend+rsi_val+rsi_divergence+rsi_divergence_strength>>relative_strength,MULTI_PERIOD]
+DB.INDICATORS.STOCHASTIC:[stoch_k+stoch_d+stoch_k_5+stoch_d_5>>momentum_oscillator,DUAL_PERIOD]
+DB.INDICATORS.TREND:[adx+adx_direction+plus_di+minus_di+parabolic_sar+psar+supertrend>>directional_analysis,COMPREHENSIVE]
+DB.INDICATORS.MOMENTUM:[momentum+momentum_5+momentum_10+momentum_15+roc+roc_5+roc_10+roc_15>>rate_of_change,MULTI_PERIOD]
+DB.INDICATORS.VOLUME:[obv+volume+vwap+vwap_series+volume_ratio_5+volume_ratio_20+volume_trend+volume_spike>>volume_analysis,COMPREHENSIVE]
+DB.INDICATORS.VOLATILITY:[atr+atr_14+atr_pct+atr_ratio+volatility_regime+volatility_5+volatility_20+volatility_std+volatility_ratio>>volatility_measurement,DETAILED]
+DB.INDICATORS.CHANNELS:[donchian_upper+donchian_lower+donchian_middle+keltner_upper+keltner_lower+keltner_middle>>price_channels,SUPPORT_RESISTANCE]
+DB.INDICATORS.PRICE_RATIOS:[price_vs_ema_5+price_vs_ema_8+price_vs_ema_10+price_vs_ema_20+price_vs_ema_50+price_vs_ema_100+price_vs_ema_200>>ema_relative_positioning,COMPARATIVE]
+DB.INDICATORS.PRICE_RATIOS_SMA:[price_vs_sma_5+price_vs_sma_10+price_vs_sma_20+price_vs_sma_50+price_vs_sma_100+price_vs_sma_200>>sma_relative_positioning,COMPARATIVE]
+DB.INDICATORS.OVERBOUGHT_OVERSOLD:[williams_r+cci+fisher+fisher_val+rolling_fisher+stc+stc_val+stc_ema1+stc_ema2>>oscillator_suite,BOUNDED]
+DB.INDICATORS.CUSTOM_FEATURES:[trend_bias+compression+volume_spike+bb_width+trend_confidence+trend_quality+cloud_distance>>proprietary_signals,SPECIALIZED]
+DB.INDICATORS.CANDLE_ANALYSIS:[candle_body_size+candle_volume+open_close_pct+high_low_pct+upper_wick+lower_wick+reversal_candle_score>>candlestick_patterns,MICROSTRUCTURE]
+DB.INDICATORS.ADVANCED_CALC:[price_position_lookback_20+consistent_moves+exhaustion_score+fib_retrace_level+fibo_proximity+elder_impulse>>sophisticated_analysis,COMPLEX]
+DB.INDICATORS.DIVERGENCE:[rsi_divergence+rsi_divergence_strength+divergence_strength>>signal_confirmation,VALIDATION]
+DB.INDICATORS.SYSTEMATIC_FEATURES:[price_change+price_change_abs+price_trend+price_velocity+prev_velocity+recent_velocity+price_tolerance>>price_dynamics,KINEMATIC]
+DB.INDICATORS.PRICE_LEVELS:[high_price+low_price+open_price+close_price+max_price+min_price+median_price+recent_high+recent_low>>price_summary,STATISTICAL]
+DB.DATA_TYPES.PRICE:[numeric+double_precision>>decimal_precision_financial,ACCURATE]
+DB.DATA_TYPES.TIMESTAMP:[timestamp_without_time_zone>>utc_standardized,CONSISTENT]
+DB.DATA_TYPES.SYMBOL:[text+character_varying_20>>flexible_identifier,STANDARD]
+DB.DATA_TYPES.NULLABLE:[nullable_yes_no>>optional_required_fields,DEFINED]
+DB.AUXILIARY.MARKET_DATA:[sentiment_data+order_book_data>>external_market_signals,SUPPLEMENTARY]
+DB.AUXILIARY.SENTIMENT:[symbol+timestamp+sentiment_score>>market_psychology,BEHAVIORAL]
+DB.AUXILIARY.ORDER_BOOK:[symbol+timestamp+order_book_imbalance>>microstructure_data,DEPTH]
+DB.AUXILIARY.CURRENT_PRICES:[prices+symbol+price+timestamp>>real_time_quotes,LIVE]
+DB.AUXILIARY.MODEL_DECISIONS:[teacher_decision+optuna_decision+forest_decision>>ai_ensemble_tracking,INTELLIGENCE]
+DB.SECURITY.LOGIN:[login_attempts+ip_address+attempts+locked_until>>brute_force_protection,SECURED]
+DB.SECURITY.SESSIONS:[remember_tokens+token_hash+username+expires_at>>session_management,AUTHENTICATED]
+DB.ARCHITECTURE.PARTITIONING:[timeframe_specific_tables>>horizontal_partitioning_performance,OPTIMIZED]
+DB.ARCHITECTURE.INDEXING:[symbol+timestamp_composite>>query_optimization,INDEXED]
+DB.ARCHITECTURE.CONSTRAINTS:[primary_keys+not_null+foreign_keys>>data_integrity,ENFORCED]
+DB.PERFORMANCE.INDICATORS:[400_plus_columns_per_timeframe>>comprehensive_feature_set,EXTENSIVE]
+DB.PERFORMANCE.PRICE_DATA:[16_timeframe_tables+ohlcv_standard>>multi_resolution_storage,SCALABLE]
+DB.PERFORMANCE.STORAGE:[postgresql_numeric_precision>>financial_grade_accuracy,RELIABLE]
+DB.MAINTENANCE.CLEANUP:[automated_old_data_removal>>storage_optimization,PLANNED]
+DB.MAINTENANCE.BACKUP:[regular_snapshots+transaction_logs>>disaster_recovery,PROTECTED]
+DB.INTEGRATION.COINBASE:[real_time_price_feeds>>live_market_data,CONNECTED]
+DB.INTEGRATION.AI_MODELS:[feature_extraction+model_predictions>>intelligent_trading,INTEGRATED]
+DB.INTEGRATION.FLASK_UI:[dashboard_queries+real_time_updates>>user_interface,ACCESSIBLE]
+STATUS.DATABASE.OPERATIONAL:[complete_schema+all_timeframes+comprehensive_indicators>>production_ready,ACTIVE]
+STATUS.DATA.QUALITY:[financial_precision+timestamp_consistency+symbol_standardization>>professional_grade,MAINTAINED]
+STATUS.PERFORMANCE.OPTIMIZED:[proper_indexing+partitioning+data_types>>high_performance,TUNED]
+LORETOKENS: Database schema compressed - Complete trading system data architecture
+---
+## Sample prompts for decompression
+
+Use these with any capable LLM. Paste the LoreToken block first, then one of the prompts:
+
+**Level L1 – short/high-level summary**  
+"Provide a 3-sentence overview of this database."  
+Goal: Persona-level snapshot, e.g., "Nova stores trade logs, indicator tables, and balances for every timeframe."  
+Token budget: <200–300 output tokens.
+
+**Level L3 – subsystem outline**  
+"Expand each LoreToken stanza into bullet points covering tables, key fields, and status."  
+Goal: 2–3 lines per LoreToken stanza (e.g., one bullet for `DB.PRICE_DATA`, another for `DB.INDICATORS`).  
+Token budget: 1–3K tokens.
+
+**Level L5 – full documentation**  
+"Generate a technical spec describing every table mentioned, including field meanings, cardinality, and how the AI uses them."  
+Goal: Multi-page architecture doc (10–20K tokens).  
+Tip: Encourage the model to group related sections (CORE tables vs indicators) so the output stays structured.
+
+**Level L7 – exhaustive manual**  
+"Write a complete API/operator manual for the database, including sample queries, migration notes, and how each indicator timeframe is calculated."  
+Goal: Book-length output; push the model toward 25–30K tokens if the context/window allows.  
+Use cases: offline reference manuals, onboarding material, compliance documentation.
+
+**Meta prompt**  
+Whenever the model struggles, remind it that LoreTokens encode schema + status + semantics. Example:  
+"Each line is `NAMESPACE.OPERATION:[fields>>description,STATUS]`. Reconstruct the original meaning before writing."  
+This keeps smaller models on track.
