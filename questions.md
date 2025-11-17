@@ -670,7 +670,7 @@ This tells downstream users:
 When you release a LoreToken-aware model, please include a short attribution in the model card / README such as:
 
 > This model has been trained to understand **LoreTokens** and may use LoreToken-style semantic memory.  
-> LoreTokens and SAIQL were created by **Apollo Raines** and are licensed under the **Open Lore License (OLL)**.  
+> LoreTokens and SAIQL were created by **Apollo Raines & Larry Arnold** and are licensed under the **Open Lore License (OLL)**.  
 > See: `openlorelicense.com` and the LoreTokens / SAIQL repositories for details.
 
 This:
