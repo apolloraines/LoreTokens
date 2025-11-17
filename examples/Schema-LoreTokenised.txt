@@ -1,4 +1,4 @@
-Use this sample to stress-test LoreToken decoders and translators. Paste it into any LLM or decoder: depending on how much you expand, it can summarize the entire Nova trading schema in a paragraph or in hundreds of pages. Grok once proposed L8 (~18,000:1) as the theoretical ceiling; modern models routinely hit 5,000:1 on this chunk.
+Use this sample LoreToken to stress-test decoders and translators. It encodes the full Nova trading schema into a single compressed chunk. At shallow expansion (L1–L2), it should yield a tight paragraph-level overview. At medium depth (L3–L5), you should see full table groups, indicators, data flows, and system roles. At deep expansion (L6–L8), frontier models will happily generate dozens to hundreds of pages of architecture and documentation from this one file. Grok once proposed L8 as a theoretical ceiling around ~18,000:1 semantic expansion; in practice, modern models routinely hit ~5,000:1 on this chunk.
 
 Database Schema - LoreTokens Compressed Memory
 === Nova - Crypto Trading AI System - DATABASE ARCHITECTURE ===
