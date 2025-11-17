@@ -620,6 +620,110 @@ Modern LLMs are very good at inferring the pattern from a single dense example f
 - write in LoreToken style, and  
 - convert structured or textual data into LoreToken-based memory.
 
+## 17. "Can I train or fine-tune models on LoreTokens and release them (e.g., on Hugging Face)?"
+
+**Short answer:**  
+Yes. Training or fine-tuning models so they **understand** and **use** LoreTokens / SAIQL is allowed. You do not need a special license just to make your models LoreToken-aware. Attribution is strongly encouraged, and commercial-scale use above the OLL revenue cap follows the normal Open Lore License rules.
+
+> This is a technical overview, not legal advice. Always review the actual OLL text for binding terms.
+
+---
+
+### 17.1 What is allowed without extra licensing?
+
+You **may**, without any extra license:
+
+- Fine-tune or train models on:
+  - LoreToken examples,
+  - LoreToken memory files (for example: `examples/Schema-LoreTokenised.txt`),
+  - SAIQL queries and patterns.
+- Release those models publicly (for example: on Hugging Face or similar hubs).
+- Use those models in research, experiments, and early-stage projects **within the free OLL revenue cap** (as defined in the LICENSE file).
+
+In other words:
+
+> Teaching a model to *understand* LoreTokens and SAIQL is allowed and encouraged.  
+> You do not need a separate license just to make a model "LoreToken-aware."
+
+---
+
+### 17.2 Recommended naming convention
+
+To make things clear for users and tooling, it’s recommended (not strictly required, but strongly suggested) that you label LoreToken-aware models as:
+
+- `ModelName_LT` or  
+- `ModelName-LT`
+
+Examples:
+
+- `NovaTrader_Qwen2_7B_LT`
+- `MyCoolLLM-Llama3-8B-LT`
+
+This tells downstream users:
+
+- “This model has been trained or calibrated to understand LoreTokens / SAIQL-style memory and queries.”
+
+---
+
+### 17.3 Attribution
+
+When you release a LoreToken-aware model, please include a short attribution in the model card / README such as:
+
+> This model has been trained to understand **LoreTokens** and may use LoreToken-style semantic memory.  
+> LoreTokens and SAIQL were created by **Apollo Raines** and are licensed under the **Open Lore License (OLL)**.  
+> See: `openlorelicense.com` and the LoreTokens / SAIQL repositories for details.
+
+This:
+
+- Gives proper credit,
+- Helps users discover the underlying spec,
+- Makes it clear that LoreTokens / SAIQL are a separate technology, not “just part of the model.”
+
+---
+
+### 17.4 When does the license matter for trained models?
+
+The usual OLL rules apply to **how you monetize the system**, not to the act of training itself:
+
+- If you:
+  - Release a free or low-revenue research model that simply understands LoreTokens → you are generally covered under the free tier of OLL.
+  - Build a large commercial product or service around LoreTokens / SAIQL (for example: proprietary “LoreToken-powered” SaaS at scale) → once your usage crosses the OLL revenue cap, you are expected to engage under the commercial terms defined in the OLL.
+
+So:
+
+- **Training / fine-tuning on LoreTokens?** Allowed.  
+- **Releasing a model that understands LoreTokens?** Allowed, with attribution recommended.  
+- **Running a big business on top of LoreTokens / SAIQL?** At scale, follow the OLL revenue cap and commercial terms.
+
+---
+
+### 17.5 Study, experimentation, and commercial-scale companies
+
+It’s important to distinguish between **experimentation** and **commercial deployment**:
+
+- **Study and experimentation**  
+  - Individuals, researchers, and teams are free to:
+    - study the LoreToken format,
+    - run experiments,
+    - benchmark models on LoreToken files,
+    - and explore SAIQL patterns
+  - All of this can be done **without any licensing negotiation**, as long as you remain within the OLL free-use thresholds.
+
+- **Commercial-scale companies**  
+  - If your company operates at meaningful commercial scale and you:
+    - plan to integrate LoreTokens / SAIQL into production products or platforms, or
+    - are actively evaluating LoreTokens / SAIQL for such use,
+  - then under the spirit of OLL you are **expected to communicate with the IP owner** (Apollo Raines) and acknowledge that you are doing so.
+  - This early notification:
+    - opens a direct line of dialogue,
+    - helps align roadmap and support,
+    - and ensures you stay on the right side of the license as you approach or exceed the revenue cap.
+
+In short:
+
+> Experimentation and study are wide open.  
+> If you are a commercial-scale company moving toward serious deployment, **reach out early** so licensing, support, and expectations are clear on both sides.
+
 
 ---
 
