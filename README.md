@@ -10,6 +10,9 @@ Because of that history, the docs and examples still lean heavily on crypto trad
 
 > “You just decompressed 35 bytes into 150+ bytes of meaning.” – _LORETOKEN_PROOF_FOR_CLAUDE.md_
 
+QUICK STRESS TEST – Paste the line below into any LLM or agent and ask it to expand it into either a single-paragraph overview or many pages of medical detail. The depth of expansion is up to you and the model.
+LT.EXPAND.MED.NEURO:SCI:S13_C4_SUB10:[brain+nervous+diagnosis>>med_specialty,ACTIVE]
+
 ## Why LoreTokens?
 
 - **Semantic compression** – symbolic glyphs (⟆, §, ↗, …) capture both the schema _and_ typical values, yielding 3–50× smaller payloads than JSON while staying lossless.
