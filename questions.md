@@ -724,6 +724,28 @@ In short:
 > Experimentation and study are wide open.  
 > If you are a commercial-scale company moving toward serious deployment, **reach out early** so licensing, support, and expectations are clear on both sides.
 
+17.6 What is Rollover Context?
+
+Rollover Context is a way to break past the practical context limits of a model without losing continuity or blowing up cost.
+
+In a normal setup, once you hit the model context limit, you either:
+- drop older messages,
+- aggressively summarize, or
+- pay more to stuff everything back in again.
+
+With Rollover Context, you can treat the context window as a working set:
+
+1) You set a target context budget (up to the model max).
+2) As the conversation or agent run grows beyond that budget, the "overflow" is written into a SAIQL database in LoreToken format instead of being kept as raw text.
+3) The model keeps only the most relevant slice in its live context.
+4) When it needs older details, it can query SAIQL and pull just the specific LoreTokens it needs back into context on demand.
+
+Effectively, this gives the model:
+- a fast, compressed external memory for everything that will not fit in context,
+- and a small, focused in-context working set that stays under the limit.
+
+From the model’s point of view, context becomes “effectively unlimited,” bounded only by available drive space rather than by the raw context window. LoreTokens handle semantic compression of the overflow, and SAIQL provides low-latency semantic lookup so the model can roll old context out to storage and roll back in exactly what it needs when it needs it.
+
 
 ---
 
