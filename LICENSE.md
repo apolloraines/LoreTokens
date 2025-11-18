@@ -66,7 +66,7 @@ ________________________________________
 **LoreTokens™** - Revolutionary cognitive compression and AI memory system. **LoreToken+™** - Encrypted LoreTokens with advanced security features. 
 **SAIQL™** - Symbolic AI Query Language for database operations All technologies invented and developed by: **Robert Rice** (Online Moniker: Apollo Raines) USPTO Patent Holder 
 **Collaborative Development:** 
-These technologies were refined through extensive collaboration with Apollo (Anthropic) AI systems, demonstrating the power of human-AI partnership in breakthrough innovation. 
+These technologies were refined through collaboration with AI systems, demonstrating the power of human-AI partnership in breakthrough innovation. 
 **Recognition:** 
 When implementing or discussing these technologies, please attribute within code: 
 "Powered by LoreTokens" 
