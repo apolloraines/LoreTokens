@@ -719,12 +719,7 @@ It’s important to distinguish between **experimentation** and **commercial dep
     - helps align roadmap and support,
     - and ensures you stay on the right side of the license as you approach or exceed the revenue cap.
 
-In short:
-
-> Experimentation and study are wide open.  
-> If you are a commercial-scale company moving toward serious deployment, **reach out early** so licensing, support, and expectations are clear on both sides.
-
-17.6 What is Rollover Context?
+###  17.6 What is Rollover Context?
 
 Rollover Context is a way to break past the practical context limits of a model without losing continuity or blowing up cost.
 
@@ -746,6 +741,11 @@ Effectively, this gives the model:
 
 From the model’s point of view, context becomes “effectively unlimited,” bounded only by available drive space rather than by the raw context window. LoreTokens handle semantic compression of the overflow, and SAIQL provides low-latency semantic lookup so the model can roll old context out to storage and roll back in exactly what it needs when it needs it.
 
+
+In short:
+
+> Experimentation and study are wide open.  
+> If you are a commercial-scale company moving toward serious deployment, **reach out early** so licensing, support, and expectations are clear on both sides.
 
 ---
 
