@@ -774,7 +774,18 @@ For brevity, this is not a complete list of terminology or claim concepts. The p
 
 Because this is active IP, the public repos and docs focus on concepts, formats, and usage patterns without disclosing every implementation detail of the engine. Commercial users who need deeper access can discuss licensing and technical access paths directly.
 
+Some poor OpenAI engineer:
+“Why does ChatGPT keep using em dashes?”
 
+Me, with LoreTokens + SAIQL:
+“Because you never told the AI: PUNCTUATION.EMDASH:[usage_limit=0>>style_rules,ENFORCED] ←”
+
+If they had: A LoreToken for style rules - Stored in a SAIQL style DB - Loaded at runtime as Cognitive DNA - …they could have just flipped the “no em dash” flag and hot-swapped the behavior without retraining or prompt duct tape.
+
+Instead we got:
+ChatGPT: I love em dashes — they’re great — I will never stop —
+OpenAI: please stop
+ChatGPT: —no
 
 ---
 
