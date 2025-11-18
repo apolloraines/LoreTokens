@@ -770,7 +770,7 @@ For brevity, this is not a complete list of terminology or claim concepts. The p
 - Meaning Capsules – individual LoreTokens as compact capsules of reusable meaning that expand into full behavior, context, or knowledge when interpreted by a model.
 
 - EXPAND.MED.NEURO:SCI:S13_C4_SUB10:[brain+nervous+diagnosis>>med_specialty,ACTIVE]
-- ^ is an example of meaning capsule - we often show these as public examples that can explode into hundreds of pages of documentation output from a model.
+  ^ is an example of meaning capsule - we often show these as public examples that can explode into hundreds of pages of documentation output from a model.
 
 Because this is active IP, the public repos and docs focus on concepts, formats, and usage patterns without disclosing every implementation detail of the engine. Commercial users who need deeper access can discuss licensing and technical access paths directly.
 
