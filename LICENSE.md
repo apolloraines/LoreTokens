@@ -47,13 +47,9 @@ ________________________________________
 •	May not file derivative patents based on LoreTokens architecture or function without explicit, licensed permission.
 Violations of the Big Bird Addendum may result in revocation of licensing rights, publication of the violation, and coordination with standards bodies or public registries to flag noncompliant actors.
 ________________________________________
-Contact & Licensing Requests For revenue disclosures, licensing inquiries, or collaboration, contact: [Robert Rice - Inventor & Rights Holder] [Contact information or website placeholder]
+Contact & Licensing Requests For revenue disclosures, licensing inquiries, or collaboration, contact: [Apollo Raines - Inventor & Rights Holder] [apollo@saiql.ai] - CoFounder - Larry Arnold - larry@loretokens.com
 In Closing This license reflects a belief that ideas should lift others, not cage them. It grants freedom where it fosters growth, and responsibility where success emerges.
 Build boldly. Fly fairly.
-
-
-
-
 ________________________________________
 **Open Lore License Adoption** 
 This licensing model is freely available for other patent holders who share our commitment to innovation-positive intellectual property management. 
