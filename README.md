@@ -25,7 +25,7 @@ EXPAND.MED.NEURO:SCI:S13_C4_SUB10:[brain+nervous+diagnosis>>med_specialty,ACTIVE
 
 | Format | Extension | Compression | Readability | When to use |
 | --- | --- | --- | --- | --- |
-| **Symbolic** | `.sym` | 2.6× | Machines prefer it | High-volume streams (tick data, sensor logs) or GPU compression pipelines that operate on glyphs. |
+| **Symbolic** | `.sym` | 2.6× | Machines prefer it | High-volume streams (tick data, sensor logs) or GPU compression pipelines that operate on glyphs. SAIQL Only.|
 | **LoreToken Standard** | `.lt` | 1.5× | Power-user friendly | Balanced mix for CLI tooling, checkpoints, and diffable repos. |
 | **LoreToken Ultra** | `.ltu` | 1.0× | Human-friendly | Docs, audits, and memory exports where clarity beats savings. |
 
@@ -36,7 +36,7 @@ See [`docs/FORMATS.md`](docs/FORMATS.md) for the details copied from Apollo’s 
 ## Same record in three formats
 
 ```
-Symbolic (.sym):
+Symbolic (.sym): SAIQL Only
 ⟆⟐.RAW:[§₿»⏱68a128dc»↗117391.31»⤊117406.15»⤋117370.33»↘117370.38»▣0.610»⌘60,✓]
 
 Standard (.lt):
