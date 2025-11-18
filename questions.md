@@ -777,7 +777,8 @@ Because this is active IP, the public repos and docs focus on concepts, formats,
 ### Just some Funny
 Some poor OpenAI engineer: “Why does ChatGPT keep using em dashes?”
 
-Apollo, with LoreTokens + SAIQL: “Because you never told the AI: PUNCTUATION.EMDASH:[usage_limit=0>>style_rules,ENFORCED] ←”If they had: A LoreToken for style rules - Stored in a SAIQL style DB - Loaded at runtime as Cognitive DNA - they could have just flipped the “no em dash” flag and hot-swapped the behavior without retraining or prompt duct tape.
+Apollo - “Because you never told the AI: PUNCTUATION.EMDASH:[usage_limit=0>>style_rules,ENFORCED]”
+If they had: A LoreToken for style rules - Stored in a SAIQL style DB - Loaded at runtime as Cognitive DNA - they could have just flipped the “no em dash” flag and hot-swapped the behavior without retraining or prompt duct tape.
 
 ### Instead we got:
 - ChatGPT: I love em dashes — they’re great — I will never stop —
