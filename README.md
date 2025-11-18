@@ -19,7 +19,7 @@ EXPAND.MED.NEURO:SCI:S13_C4_SUB10:[brain+nervous+diagnosis>>med_specialty,ACTIVE
 - **Semantic compression** – compact LoreToken symbols encode schemas, behaviors, and typical values so models do not need the full JSON every time. In internal tests on prompts and configs, we see 3–10x smaller payloads than equivalent JSON, and in extreme, domain tuned cases, much higher semantic compression while keeping the same model behavior.
 - **LLM-native** – the formats are optimized for Claude, Grok, GPT, etc.; models learn the glyph vocabulary and can reason directly on-compression (no decoding step).
 - **Safety rails** – declared lengths, typed prefixes, and status codes make it easy to sanity-check arrays in streaming contexts.
-- **Field-proven** – used inside SAIQL, NovaMem, Loretoken-GPU, and Codex workflows to hit “616× faster than Postgres” retrieval speeds.
+- **Field-proven** – used inside SAIQL, NovaMem, Loretoken-GPU, and Codex workflows to hit “220× faster than Postgres” retrieval speeds.
 
 ## Format overview
 
@@ -91,7 +91,7 @@ LORETOKEN_PRICE.BTC_USD:[timestamp:1755392220,open:117391.31,high:117406.15,low:
 ## Benchmarks & motivation
 
 - `LORETOKEN_PROOF_FOR_CLAUDE.md` demonstrates 4.3× semantic expansion (35 bytes → 150+ bytes of meaning) that LLMs perform instinctively.
-- Nova’s production logs reference **616× faster** SAIQL queries when LoreTokens keep computations within compressed space.
+- Nova’s production logs reference **220× faster** SAIQL queries when LoreTokens keep computations within compressed space.
 - GPU compression report logs ~1.11 MB saved in 2.27 s using zero-run encoding, sparse-matrix compression, and dictionary packing.
 
 ## Tooling pointers
