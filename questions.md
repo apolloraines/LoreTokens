@@ -761,7 +761,16 @@ A full non provisional application is currently being prepared by an intellectua
 - Use of LoreTokens as a native symbolic memory and instruction layer, including rolling or "Rollover Context" architectures where live context is treated as a working set backed by LoreToken/SAIQL storage.  
 - A semantic query layer (SAIQL) operating over LoreToken encoded memory, enabling contextual retrieval, audit, and analysis of an AI system’s lore.
 
+For brevity, this is not a complete list of terminology or claim concepts. The patent work also introduces and formalizes ideas such as:
+
+- Meaning Compression – compressing semantics instead of bytes, storing behavior and structure in LoreTokens, not just shorter text.  
+- Cognitive DNA – LoreTokens as the "genetic code" of an AI system, encoding personality, ethics, memory, logic, and history in a reloadable form.  
+- Cognitive Sovereignty – giving users or organizations direct control over an AI’s "mind" because its lore and rules live in editable LoreTokens.  
+- Behavioral Hot Swapping – changing or upgrading an AI’s behavior at runtime by swapping LoreTokens, without retraining the underlying model.  
+- Meaning Capsules – individual LoreTokens as compact capsules of reusable meaning that expand into full behavior, context, or knowledge when interpreted by a model.
+
 Because this is active IP, the public repos and docs focus on concepts, formats, and usage patterns without disclosing every implementation detail of the engine. Commercial users who need deeper access can discuss licensing and technical access paths directly.
+
 
 
 ---
