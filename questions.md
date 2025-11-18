@@ -746,6 +746,24 @@ Effectively, this gives the model:
 
 From the model’s point of view, context becomes “effectively unlimited,” bounded only by available drive space rather than by the raw context window. LoreTokens handle semantic compression of the overflow, and SAIQL provides low-latency semantic lookup so the model can roll old context out to storage and roll back in exactly what it needs when it needs it.
 
+###  17.7 What is the patent status of LoreTokens and SAIQL?
+
+LoreTokens and the underlying memory architecture are covered under a filed U.S. provisional patent titled:
+
+"System and Method for Hierarchical, Persistent, and Contextual AI Memory and Lore Management."
+
+A full non provisional application is currently being prepared by an intellectual property law firm, with broader claims under development. At a high level, the patent work covers concepts such as:
+
+- Hierarchical, persistent AI memory graphs ("lore") that span sessions, deployments, and versions.  
+- Encoding operational state, code modules, trading logic, agent personalities, event histories, and system configuration into a unified LoreToken based memory structure.  
+- Semantic compression of those memory structures into compact LoreTokens that can be stored, transmitted, and restored with far less compute than raw logs or prompts.  
+- Runtime reconstruction of AI systems and agents from LoreToken archives, including restoration of behavior, configuration, and contextual identity after interruption or redeployment.  
+- Use of LoreTokens as a native symbolic memory and instruction layer, including rolling or "Rollover Context" architectures where live context is treated as a working set backed by LoreToken/SAIQL storage.  
+- A semantic query layer (SAIQL) operating over LoreToken encoded memory, enabling contextual retrieval, audit, and analysis of an AI system’s lore.
+
+Because this is active IP, the public repos and docs focus on concepts, formats, and usage patterns without disclosing every implementation detail of the engine. Commercial users who need deeper access can discuss licensing and technical access paths directly.
+
+
 ---
 
 If you have a question or objection that is not covered here, open an issue and ask it. Skeptical, detailed questions are welcome.
