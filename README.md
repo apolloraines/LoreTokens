@@ -40,10 +40,11 @@ Symbolic (.sym): SAIQL Only
 ⟆⟐.RAW:[§₿»⏱68a128dc»↗117391.31»⤊117406.15»⤋117370.33»↘117370.38»▣0.610»⌘60,✓]
 
 Standard (.lt):
-LORETOKEN.PRICE:[BTC-USD,ts:1755392220,o:117391.31,h:117406.15,l:117370.33,c:117370.38,v:0.610,tf:60,ACTIVE]
+DB.DATA_TYPES.NULLABLE:[nullable_yes_no>>optional_required_fields,DEFINED]
 
 Ultra (.ltu):
-LORETOKEN_PRICE.BTC_USD:[timestamp:1755392220,open:117391.31,high:117406.15,low:117370.33,close:117370.38,volume:0.610,timeframe:60,STATUS:ACTIVE]
+LORETOKEN_SESSION_LORETOKEN_DEMO: ultra_format_communication_throughout token_compression_62pct_demonstrated semantic_precision_maintained PROVEN
+
 ```
 
 ## Architecture and supporting tools
