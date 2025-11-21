@@ -232,4 +232,4 @@ LoreTokens and similar semantic compression formats do not preserve sentences—
 
 **Keywords**: Large Language Models, Semantic Compression, Emergent Properties, Bayesian Reconstruction, Information Theory, LoreTokens, Semantic Manifolds, Prior-Driven Generation
 
-publishe 11.21.2025 by Apollo Raines & Larry Arnold of SAIQL/LoreTokens
+Published via GIT on 11.21.2025 by Apollo Raines & Larry Arnold of SAIQL/LoreTokens
