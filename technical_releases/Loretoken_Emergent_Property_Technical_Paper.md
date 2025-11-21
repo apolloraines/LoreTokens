@@ -226,7 +226,7 @@ LoreTokens and similar semantic compression formats do not preserve sentences—
 
 ## References
 
-*To be populated with formal citations upon publication*
+*To be populated with formal citations later*
 
 ---
 
