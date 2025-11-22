@@ -106,7 +106,7 @@ a **purpose‑built memory and knowledge system** designed around how an AI trad
 
 ## 4. Nova’s Model Ensemble and How She Sees the Market
 
-Nova doesn’t rely on a single “black box” model. She runs an **ensemble of specialized advisors**, each with a clearly defined role. At a high level (without exposing any model weights or code), you can think of them in a few broad categories:
+Nova doesn’t rely on a single “black box” model. She runs an **ensemble of specialized advisors**, each with a clearly defined role. Nova has been running an internal council of specialized AI advisors since long before “multi-agent debate” became a buzzword. At a high level (without exposing any model weights or code), you can think of them in a few broad categories:
 
 - **Short-Term Behavior Models**  
   These watch the market on very small timeframes, looking for:
@@ -283,7 +283,7 @@ All low‑level implementation details – code, indicators, thresholds, model w
 
 ## 7. Nova as the Origin Story for SAIQL and LoreTokens
 
-Nova is not just a trading AI that happens to use SAIQL and LoreTokens – she is the **reason they exist**. In the process of trying to make one AI trade better, faster, and safer, we accidentally built something far bigger than “just Nova”: an AI-native database engine (SAIQL), a new index (QIPI v2), a dedicated agent memory engine (LoreCore), and a semantic compression layer (LoreTokens) that turned out to be needed far beyond crypto.
+Nova is not just a trading AI that happens to use SAIQL and LoreTokens – she is the **reason they exist**. In the process of trying to make one AI trade better, faster, and safer, we accidentally built something bigger than “just Nova”: an AI-native database engine (SAIQL), a new index (QIPI v2), a dedicated agent memory engine (LoreCore), and a semantic compression layer (LoreTokens) that turned out to be generally useful far beyond crypto.
 
 Early versions of Nova were built on top of conventional databases, log systems, and time-series tools. Once she began:
 
@@ -314,3 +314,10 @@ Nova is the “poster child” and original stress test for this stack.
 
 ---
 
+## 7. How to Talk About Nova Publicly
+
+If you want to describe Nova in a single paragraph:
+
+> Nova is an autonomous crypto trading AI built with her own agent‑native database (SAIQL), custom index (QIPI v2), and storage engine (LoreCore), plus a semantic memory layer (LoreTokens) that lets her reuse trading knowledge over time. She runs multiple specialized models in parallel, manages risk and exposure automatically, and logs every decision so her behavior can be reviewed and improved – making her closer to a tireless, data‑driven trading partner than a typical “bot.”
+
+This explanation is designed to be **safe to share** (no code, no formulas, no secret sauce) while still giving people an accurate sense of why Nova is very different from the average “AI bot” ad.
