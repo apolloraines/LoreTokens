@@ -283,7 +283,7 @@ All low‑level implementation details – code, indicators, thresholds, model w
 
 ## 7. Nova as the Origin Story for SAIQL and LoreTokens
 
-Nova is not just a trading AI that happens to use SAIQL and LoreTokens – she is the **reason they exist**. In the process of trying to make one AI trade better, faster, and safer, we accidentally built something bigger than “just Nova”: an AI-native database engine (SAIQL), a new index (QIPI v2), a dedicated agent memory engine (LoreCore), and a semantic compression layer (LoreTokens) that turned out to be generally useful far beyond crypto.
+Nova is not just a trading AI that happens to use SAIQL and LoreTokens – she is the **reason they exist**. In the process of trying to make one AI trade better, faster, and safer, we accidentally built something far bigger than “just Nova”: an AI-native database engine (SAIQL), a new index (QIPI v2), a dedicated agent memory engine (LoreCore), and a semantic compression layer (LoreTokens) that turned out to be needed far beyond crypto.
 
 Early versions of Nova were built on top of conventional databases, log systems, and time-series tools. Once she began:
 
